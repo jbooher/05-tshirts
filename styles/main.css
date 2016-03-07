@@ -5,9 +5,97 @@
   vertical-align: top;
 }
 
+body {
+  font-family: "Lato", sans-serif;
+}
+
 /*Layout*/
 
 /*Module*/
+
+.card {
+  margin: 35px;
+  width: 205px;
+}
+
+.card--selection {
+  width: 205px;
+  border: 2px solid #99c2ff;
+  border-radius: 1px;
+}
+
+.selection--image {
+  position: relative;
+  width: 205px;
+  border-bottom: 2px solid #99c2ff;
+}
+
+.image--image {
+  width: 175px;
+  height: auto;
+  padding: 16px 0 16px 16px;
+}
+
+.image--rotate {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 19px;
+  height: 19px;
+  border-left: 2px solid #99c2ff;
+  border-bottom: 2px solid #99c2ff;
+  border-radius: 1px;
+}
+
+.options--button {
+  display: inline-block;
+  width: 36px;
+  height: 30px;
+  border-right: 2px solid #99c2ff;
+}
+
+.options--button:last-child {
+  border-right: none;
+}
+
+.button--icon-img {
+  width: 35px;
+  height: 30px;
+}
+
+.button--icon-color {
+  width: 16px;
+  height: 16px;
+  background-color: #80b3ff;
+  margin: 7px 0 0 7px;
+}
+
+.button--icon-text {
+  display: inline-block;
+  color: #99c2ff;
+  font-size: .8rem;
+  padding: 8px 0 0 8px;
+}
+
+.card--footer{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer--name {
+  padding: 10px 0 0 5px;
+  display: inline-block;
+  font-size: 1rem;
+  color: #99c2ff;
+}
+
+.footer--price {
+  display: inline-block;
+  font-weight: bold;
+  padding: 9px 5px 0 0;
+  color: #80b3ff;
+}
 
 /*State*/
 
