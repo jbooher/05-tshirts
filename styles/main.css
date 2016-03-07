@@ -33,7 +33,7 @@ body {
 .image--image {
   width: 175px;
   height: auto;
-  padding: 16px 0 16px 16px;
+  padding: 15px 0 15px 16px;
 }
 
 .image--rotate {
@@ -48,10 +48,11 @@ body {
 }
 
 .options--button {
-  display: inline-block;
-  width: 36px;
+  float: left;
+  width: 39px;
   height: 30px;
   border-right: 2px solid #99c2ff;
+  position: relative;
 }
 
 .options--button:last-child {
@@ -59,22 +60,34 @@ body {
 }
 
 .button--icon-img {
-  width: 35px;
+  width: 39px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.button--icon-hover {
+  width: 39px;
   height: 30px;
 }
 
-.button--icon-color {
-  width: 16px;
-  height: 16px;
-  background-color: #80b3ff;
-  margin: 7px 0 0 7px;
+.options--button:last-child .button--icon-img, .options--button:last-child .button--icon-hover {
+  width: 41px;
 }
 
 .button--icon-text {
   display: inline-block;
   color: #99c2ff;
   font-size: .8rem;
-  padding: 8px 0 0 8px;
+  padding: 7px 0 0 12px;
+}
+
+.button--icon-color {
+  width: 16px;
+  height: 16px;
+  background-color: #80b3ff;
+  margin: 7px 0 0 11px;
 }
 
 .card--footer{
@@ -98,6 +111,23 @@ body {
 }
 
 /*State*/
+.options--button:hover .button--icon-img {
+  display: none;
+}
+
+.options--button:hover {
+  color: #fff;
+  background-color: #80b3ff;
+}
+
+.options--button:hover .button--icon-text {
+  color: #fff;
+}
+
+.options--button:hover .button--icon-color {
+  border: 1px solid white;
+  margin: 6px 0 0 10px;
+}
 
 /*Utils*/
 .clearfix {
