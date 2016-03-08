@@ -29,7 +29,6 @@ img {
   width: 205px;
   border: 2px solid #99c2ff;
   border-radius: 1px;
-  perspective: 1000;
 }
 
 .selection--image {
@@ -37,6 +36,7 @@ img {
   width: 205px;
   height: 205px;
   border-bottom: 2px solid #99c2ff;
+  perspective: 1000;
 }
 
 .back {
@@ -53,6 +53,8 @@ img {
 
 .image--flipper {
   width: 205;
+  position: relative;
+  transition: 0.6s;
 }
 
 .image--rotate {
@@ -231,14 +233,8 @@ img {
 }
 
 /*State*/
-.selection--image:hover .image--flipper, .selection--image.hover .image--flipper {
+.image--rotate:hover .image--flipper {
   transform: rotateY(180deg);
-}
-
-.image--flipper {
-  transition: 0.6s;
-	transform-style: preserve-3d;
-	position: relative;
 }
 
 .flipper--front, .flipper--back {
