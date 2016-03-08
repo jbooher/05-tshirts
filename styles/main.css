@@ -39,7 +39,8 @@ img {
   perspective: 1000;
 }
 
-.back {
+.flipper--front, .flipper--back {
+  backface-visibility: hidden;
   position: absolute;
   top: 0;
   left: 0;
@@ -182,6 +183,7 @@ img {
   opacity: 0;
   transform: translateY(-10px);
   transition: visibility 0.5s, opacity 0.5s, transform 0.5s;
+  z-index: 3;
 }
 
 .color-menu--icon {
@@ -233,15 +235,8 @@ img {
 }
 
 /*State*/
-.image--rotate:hover .image--flipper {
+.selection--image:hover .image--flipper {
   transform: rotateY(180deg);
-}
-
-.flipper--front, .flipper--back {
-  backface-visibility: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .flipper--front {
@@ -268,10 +263,6 @@ img {
 .button--3:hover {
   background-image: url(../images/icons/button_3_hover.png);
   border-right: 2px solid #55a4dd;
-}
-
-.options--button:hover .button--icon-img, {
-  display: none;
 }
 
 .options--button:hover {
