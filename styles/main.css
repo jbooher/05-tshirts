@@ -15,10 +15,13 @@ img {
 
 /*Layout*/
 
+
+
 /*Module*/
 
 .card {
-  margin: 35px;
+  display: inline-block;
+  margin: 35px 0 35px 35px;
   width: 205px;
 }
 
@@ -41,6 +44,8 @@ img {
 }
 
 .image--rotate {
+  background-image: url(../images/icons/rotate.png);
+  background-size: contain;
   position: absolute;
   top: 0;
   right: 0;
@@ -62,6 +67,20 @@ img {
   border-right: 2px solid #99c2ff;
   position: relative;
   margin-right: -3px;
+  background-size: contain;
+  background-position: center;
+}
+
+.button--1 {
+  background-image: url(../images/icons/button_1.png);
+}
+
+.button--2 {
+  background-image: url(../images/icons/button_2.png);
+}
+
+.button--3 {
+  background-image: url(../images/icons/button_3.png);
 }
 
 .options--button:last-child {
@@ -176,7 +195,6 @@ img {
 .button--icon-color {
   width: 16px;
   height: 16px;
-  background-color: #81BCE6;
   margin: 7px 0 0 11px;
 }
 
@@ -201,13 +219,30 @@ img {
 }
 
 /*State*/
-.options--button:hover .button--icon-img {
+.image--rotate:hover {
+  background-image: url(../images/icons/rotate_hover.png);
+}
+
+.button--1:hover {
+  background-image: url(../images/icons/button_1_hover.png);
+}
+
+.button--2:hover {
+  background-image: url(../images/icons/button_2_hover.png);
+}
+
+.button--3:hover {
+  background-image: url(../images/icons/button_3_hover.png);
+  border-right: 2px solid #55a4dd;
+}
+
+.options--button:hover .button--icon-img, {
   display: none;
 }
 
 .options--button:hover {
   color: #fff;
-  background-color: #4d94ff;
+  background-color: #55a4dd;
 }
 
 .options--button:hover .button--icon-text {
