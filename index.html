@@ -9,9 +9,16 @@
   <body>
     <main>
       <div class="card">
-        <div class="card--selection">
+        <div class="card--selection" ontouchstart="this.classList.toggle('hover');">
           <div class="selection--image">
-            <img class="image--image" src="images/shirts/1_front.png" alt="">
+            <div class="image--flipper clearfix">
+              <div class="flipper--front">
+                <img class="image--image" src="images/shirts/3_front.png" alt="">
+              </div>
+              <div class="flipper--back">
+                <img class="image--image" src="images/shirts/3_back.png" alt="">
+              </div>
+            </div>
             <div class="image--rotate"></div>
           </div>
           <div class="selection--options">
@@ -46,7 +53,14 @@
       <div class="card">
         <div class="card--selection">
           <div class="selection--image">
-            <img class="image--image" src="images/shirts/2_front.png" alt="">
+            <div class="image--flipper">
+              <div class="flipper--front">
+                <img class="image--image" src="images/shirts/2_front.png" alt="">
+              </div>
+              <div class="flipper--back">
+                <img class="image--image" src="images/shirts/2_back.png" alt="">
+              </div>
+            </div>
             <div class="image--rotate"></div>
           </div>
           <div class="selection--options">
@@ -81,7 +95,14 @@
       <div class="card">
         <div class="card--selection">
           <div class="selection--image">
-            <img class="image--image" src="images/shirts/3_front.png" alt="">
+            <div class="image--flipper">
+              <div class="flipper--front">
+                <img class="image--image" src="images/shirts/3_front.png" alt="">
+              </div>
+              <div class="flipper--back">
+                <img class="image--image" src="images/shirts/3_back.png" alt="">
+              </div>
+            </div>
             <div class="image--rotate"></div>
           </div>
           <div class="selection--options">
