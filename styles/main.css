@@ -9,6 +9,10 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+img {
+  width: 100%;
+}
+
 /*Layout*/
 
 /*Module*/
@@ -47,12 +51,17 @@ body {
   border-radius: 1px;
 }
 
+.selection--options {
+  width: 205px;
+}
+
 .options--button {
-  float: left;
+  display: inline-block;
   width: 39px;
   height: 30px;
   border-right: 2px solid #99c2ff;
   position: relative;
+  margin-right: -3px;
 }
 
 .options--button:last-child {
@@ -83,10 +92,91 @@ body {
   padding: 7px 0 0 12px;
 }
 
+.button--size-menu {
+  width: 47px;
+  height: 115px;
+  border: 2px solid #99c2ff;
+  background-color: #fff;
+  position: absolute;
+  bottom: 100%;
+  left: -6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.size-menu--icon {
+  margin: 3px 0;
+}
+
+.size-menu--small {
+  height: 12px;
+  width: 15px;
+}
+
+.size-menu--medium {
+  height: 15px;
+  width: 18px;
+}
+
+.size-menu--large {
+  height: 18px;
+  width: 21px;
+}
+
+.size-menu--xl {
+  height: 21px;
+  width: 24px;
+}
+
+.button--color-menu {
+  width: 47px;
+  height: 45px;
+  border: 2px solid #99c2ff;
+  background-color: #fff;
+  position: absolute;
+  bottom: 100%;
+  left: -6px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.button--color-menu, .button--size-menu{
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: visibility 0.5s, opacity 0.5s, transform 0.5s;
+}
+
+.color-menu--icon {
+  width: 15px;
+  height: 15px;
+  margin: 0 3px 0 3px;
+}
+
+.color-menu--blue {
+  background-color: #81BCE6;
+}
+
+.color-menu--pink {
+  background-color: #D482AA;
+}
+
+.color-menu--yellow {
+  background-color: #D8AD7A;
+}
+
+.color-menu--green {
+  background-color: #29a329;
+}
+
 .button--icon-color {
   width: 16px;
   height: 16px;
-  background-color: #80b3ff;
+  background-color: #81BCE6;
   margin: 7px 0 0 11px;
 }
 
@@ -129,8 +219,11 @@ body {
   margin: 6px 0 0 10px;
 }
 
-/*Utils*/
-.clearfix {
-  overflow: auto;
-  zoom: 1;
+.options--size-hover:hover .button--size-menu, .options--color-hover:hover .button--color-menu {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  transition: visibility 0.5s, opacity 0.5s, transform 0.5s;
 }
+
+/*Utils*/
