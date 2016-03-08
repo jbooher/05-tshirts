@@ -55,8 +55,8 @@ img {
 .image--flipper {
   width: 205;
   position: relative;
-  transition: 0.6s;
-  transform-style: preserve-3d;
+  /*transition: 0.6s;
+  transform-style: preserve-3d;*/
 }
 
 .image--rotate {
@@ -236,7 +236,7 @@ img {
 }
 
 /*State*/
-.selection--image:hover .image--flipper {
+.image--rotate:hover .image--flipper {
   transform: rotateY(180deg);
 }
 
@@ -251,6 +251,8 @@ img {
 
 .image--rotate:hover {
   background-image: url(../images/icons/rotate_hover.png);
+  transition: 0.6s;
+  transform-style: preserve-3d;
 }
 
 .button--1:hover {
